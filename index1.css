@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set the body to full viewport height */
+    background-image: url("images/DJ4.jpg");
+    text-align: center;
+    background-color: #283149;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1 {
+    font-size: 4rem;
+    color: #DBEDF3;
+    font-family:monospace;
+    text-shadow: 5px 0 #c801ff9d;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #DBEDF3;
+  font-family:monospace;
+  text-shadow: 5px 0 #c801fffa;
+}
+
+
+
+@keyframes shine {
+    0% {
+      color: #fff; 
+      text-shadow: none; 
+    }
+    50% {
+      color: #e4a8d6; 
+      text-shadow: 0 0 30px #4424e1; 
+    }
+    100% {
+      color: #fff; 
+      text-shadow: none; 
+    }
+  }
+  
+  .shining-text {
+
+    animation: shine 2s infinite;
+  }
+
+footer {
+    color: #DBEDF3;
+    font-family: sans-serif;
+}    
+
+.drum {
+    background-color: rgb(13, 2, 43);
+    outline: none;
+    font-size: 10px;
+    font-family: 'Roboto', cursive;
+    color: rgba(181, 80, 80, 0);
+    font-weight: 900;
+    line-height: 5;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    text-align: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.drum:focus {
+    outline: none;
+}
+.drum:active {
+    background-color: #6c1768fb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.soundButton {
+
+  background-color: rgba(204, 92, 0, 0.726);
+  outline: none;
+  font-size: 10px;
+  font-family: 'Roboto', cursive;
+  color: rgba(181, 80, 80, 0);
+  font-weight: 900;
+  line-height: 5;
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  margin: 5px;
+  text-align: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+
+footer {
+  color: #0018f5;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+
+  font-family:monospace;
+  text-shadow: 2px 2px 2px rgb(252, 250, 250), -2px -2px 2px rgb(195, 0, 255);; 
+ 
+}

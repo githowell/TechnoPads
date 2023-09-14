@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootsrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <main>
+
+        <div class="col-12 text-center">
+            <h1 class="shining-text">
+                Electro Drum Pad</h1>
+        </div>   
+        <div class="col-12">
+            &nbsp;
+        </div>      
+        <div class="col-12">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="drum-pad">
+                            <!-- Box 1 -->
+                        </div>
+                        <button class="pad1 drum">pad1</button>
+                        <button class="pad2 drum">pad2</button>
+                        <button class="pad3 drum">pad3</button>
+                        <button class="pad4 drum">pad4</button>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="drum-pad">
+                            <!-- Box 2 -->
+                        </div>
+                        <button class="pad5 drum">pad5</button>
+                        <button class="pad6 drum">pad6</button>
+                        <button class="pad7 drum">pad7</button>
+                        <button class="pad8 drum">pad8</button>
+                    </div>
+                    <br>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="drum-pad">
+                            <h3>EDM Loops</h3>
+                            <!-- Loop play list -->
+                            <button class="soundButton" data-sound="sound1">Turn Sound 1 ON</button>
+                            <audio id="sound1" src="sounds/Oldschoolpiano.wav" loop></audio>
+    
+                            <button class="soundButton" data-sound="sound2">Turn Sound 2 ON</button>
+                            <audio id="sound2" src="sounds/PianoBuildup.wav" loop></audio>
+                            
+                            <button class="soundButton" data-sound="sound3">Turn Sound 3 ON</button>
+                            <audio id="sound3" src="sounds/SlowPianoLoop.wav" loop></audio>
+                        </div>
+                       
+                    </div>
+                
+                </div>
+            </div>
+    
+        </div>
+    </main> 
+    <footer>
+            <br>
+            <br>
+            <p>KodeGo on the beats.</p>
+    </footer>
+    <script src="index1.js" charset="utf-8"></script>
+</body>
+
+</html>
