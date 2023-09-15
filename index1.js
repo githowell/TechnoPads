@@ -6,50 +6,68 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function() {
 
 var buttons = this.innerText;
 
-         switch (buttons) {
-            case "pad1":
+playSound(buttons);
+
+});
+
+}
+
+document.addEventListener("keypress", function(e) {
+
+
+   playSound(e.key);
+   
+   buttonAnimation(e.key);
+
+
+});
+
+
+function playSound (key) {
+         switch (key) {
+            case "a":
                var pad1 = new Audio ("sounds/Base1.mp3");
                pad1.play();
                break;
-            case "pad2":
+            case "s":
                var pad2 = new Audio ("sounds/eSnair1.mp3");
                pad2.play();
                break;
-            case "pad3":
+            case "d":
                var pad3 = new Audio ("sounds/eSnair3.mp3");
                pad3.play();
                break;
-            case "pad4":
+            case "f":
                var pad4 = new Audio ("sounds/SymTick1.mp3");
                pad4.play();
                break;
          // Lower drum pads
-               case "pad5":
+               case "h":
                var pad5 = new Audio ("sounds/eStick2.mp3");
                pad5.play();
                break;
-            case "pad6":
+            case "j":
                var pad6 = new Audio ("sounds/HHOpen.mp3");
                pad6.play();
                break;
-            case "pad7":
+            case "k":
                var pad7 = new Audio ("sounds/SymTick2.mp3");
                pad7.play();
                break;
-            case "pad8":
+            case "l":
                var pad8 = new Audio ("sounds/SymTick1.mp3");
                pad8.play();
                break;
 
-
-            default:
-               break;
+            
+            default: console.log(key);
 
          }
 
-      });
+     
 
 }
+
 
 // scripts for EDM loops.
 
@@ -71,3 +89,16 @@ soundButtons.forEach(button => {
         isSoundOn = !isSoundOn;
     });
 });
+
+
+function buttonAnimation(currentKey) {
+
+   var activeButton = document.querySelector("." + currentKey);
+ 
+   activeButton.classList.add("pressed");
+ 
+   setTimeout(function() {
+     activeButton.classList.remove("pressed");
+   }, 100);
+ 
+ }

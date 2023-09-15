@@ -55,14 +55,14 @@ footer {
     outline: none;
     font-size: 10px;
     font-family: 'Roboto', cursive;
-    color: rgba(181, 80, 80, 0);
+    color: #6c1768ef;
     font-weight: 900;
     line-height: 5;
     display: inline-block;
     width: 150px;
     height: 150px;
     margin: 5px;
-    text-align: center;
+    text-align:center;
     background-size: cover;
     cursor: pointer;
     transition: background-color 0.2s;
@@ -107,3 +107,10 @@ footer {
   text-shadow: 2px 2px 2px rgb(252, 250, 250), -2px -2px 2px rgb(195, 0, 255);; 
  
 }
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #6c1768fb;
+  background-color: #6c1768
+  /* opacity: 0.5; */
+}
+c
