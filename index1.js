@@ -51,6 +51,8 @@ var buttons = this.innerText;
 
 }
 
+// scripts for EDM loops.
+
 const soundButtons = document.querySelectorAll(".soundButton");
 
 soundButtons.forEach(button => {

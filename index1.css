@@ -23,7 +23,7 @@ h3 {
   text-shadow: 5px 0 #c801fffa;
 }
 
-
+/* Header glowing effect   */
 
 @keyframes shine {
     0% {
@@ -31,7 +31,7 @@ h3 {
       text-shadow: none; 
     }
     50% {
-      color: #e4a8d6; 
+      color: #f577d7; 
       text-shadow: 0 0 30px #4424e1; 
     }
     100% {
@@ -42,7 +42,7 @@ h3 {
   
   .shining-text {
 
-    animation: shine 2s infinite;
+    animation: shine .5s infinite;
   }
 
 footer {
